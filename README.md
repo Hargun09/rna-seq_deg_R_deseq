@@ -1,5 +1,4 @@
-# rna-seq_deg_R_deseq
-##RNA-Seq Differential Expression Analysis with DESeq2
+#RNA-Seq Differential Expression Analysis with DESeq2
 
 This README provides a step-by-step guide for performing differential gene expression analysis on RNA-Seq data using the DESeq2 package in R.
 
