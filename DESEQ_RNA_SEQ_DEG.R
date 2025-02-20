@@ -122,8 +122,14 @@ de_genes <- rownames(sigs)
 
 counts_de <- Counts[de_genes,]
 
-pheatmap(counts_de, scale = "row", clustering_distance_rows = "correlation", 
-         
+pheatmap(counts_de, 
+         scale = "row", 
+         clustering_distance_rows = "correlation", 
+         clustering_distance_cols = "correlation", 
+         clustering_method = "complete",
+         show_rownames = FALSE,
+         show_colnames = FALSE)
+
 EnhancedVolcano(res,
                 lab = as.character(rownames(res)),  
                 x = 'log2FoldChange',
